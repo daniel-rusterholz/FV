@@ -8,5 +8,16 @@ namespace FV.Controllers
 {
     public class FvController : Controller
     {
+
+        public ActionResult Detail()
+        {
+            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+            {
+                return Redirect("/");
+            }
+
+            return Content("Hello");
+        }
+
     }
 }
