@@ -11,12 +11,13 @@ namespace FV.Controllers
 
         public ActionResult Detail()
         {
-            if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
-            {
-                return Redirect("/");
-            }
-
-            return Content("Hello");
+            //if (DateTime.Today.DayOfWeek == DayOfWeek.Sunday)
+            //{
+            //    return Redirect("/");
+            //}
+            
+            //return Content("Hello");
+            return View();
         }
 
     }
