@@ -17,6 +17,12 @@ namespace FV.Controllers
             _comicBookReposetory = new ComicBookReposetory();
         }
 
+        public ActionResult Index()
+        {
+            var comicBooks = _comicBookReposetory.GetComicBooks();
+
+            return View(comicBooks);
+        }
 
         public ActionResult Detail(int? id)
         {
